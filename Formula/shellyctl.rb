@@ -1,24 +1,24 @@
 class Shellyctl < Formula
   desc "Command-line client for Shelly smart devices, built on shelly-rpc."
-  homepage "https://github.com/pawelchcki/shelly-rpc"
+  homepage "https://github.com/no-std-rs/shelly-rpc"
   version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-aarch64-apple-darwin.tar.xz"
+      url "https://github.com/no-std-rs/shelly-rpc/releases/download/v0.1.0/shellyctl-aarch64-apple-darwin.tar.xz"
       sha256 "023099139084484e506b455b3fb04fc4c7895d1e1917acae0d9bd297fe4f6da4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-x86_64-apple-darwin.tar.xz"
+      url "https://github.com/no-std-rs/shelly-rpc/releases/download/v0.1.0/shellyctl-x86_64-apple-darwin.tar.xz"
       sha256 "f69c1c4dc8191d7cbe590fc53000d09d82496e490cebc4968d7241617d225a88"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-aarch64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/no-std-rs/shelly-rpc/releases/download/v0.1.0/shellyctl-aarch64-unknown-linux-gnu.tar.xz"
       sha256 "e23cde49c76e2a976307f91d050230d90f67cfe01235355a357b1b4b051c9d40"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-x86_64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/no-std-rs/shelly-rpc/releases/download/v0.1.0/shellyctl-x86_64-unknown-linux-gnu.tar.xz"
       sha256 "55b470a9ba8b67d194f856879ae952d930fe53e246f92adbf6ba25b2c54cfe24"
     end
   end
